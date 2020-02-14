@@ -1,6 +1,11 @@
 body {
   /* width: 1020px; */
   max-width: 1020px;
+  /* margin:auto; */
+}
+
+h1 {
+  display: none;
 }
 
 .header {
@@ -92,8 +97,106 @@ body {
   right: 4%;
 }
 
+.arrowLeft:hover {
+  cursor: pointer;
+}
+
+.arrowRight:hover {
+  cursor: pointer;
+}
+
 .footer {
   height: 492px;
   background: #f2f2f2;
   border-bottom: solid 5px #ffffff;
+  /* padding-top: 7%;
+  padding-left: 3%;
+  padding-right: 3%; */
+}
+
+.footer .h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  padding-left: 4%;
+  padding-top: 7%;
+}
+
+.footer .servicesDescription {
+  margin-top: 26px;
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: justify;
+  padding-left: 4%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 3%;
+  height: 48%;
+}
+
+.card {
+  display: flex;
+  margin: 1%;
+  width: 31%;
+  height: 41%;
+}
+
+.ellipseBack {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-left: -1%;
+  background-image: url(./assets/img/Ellipse.svg);
+  background-size: cover;
+  width: 59px;
+  height: 59px;
+  border-radius: 29px;
+  background-color: #eb5055;
+}
+
+.card img {
+  width: 32px;
+  height: 32px;
+}
+
+.cardText {
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.card h3 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin-bottom: 4%;
+  line-height: 16px;
+}
+
+.card p {
+  width: 219px;
+  height: 128px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: justify;
 }
