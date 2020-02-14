@@ -4,9 +4,48 @@ body {
 }
 
 .header {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
   height: 90px;
   background: #2d303a;
   border-bottom: solid 5px #323746;
+
+}
+.logo {
+  text-align: center;
+  margin: 33px 0px 0px 40px;
+}
+
+.logo img {
+  display: inline-block;
+  width: auto;
+}
+
+.navigation {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height:100%;
+  width:370px;
+  margin: 0px 40px 0px 0px;
+
+}
+.navigation span {
+  display: inline-block;
+  margin: 10px -1px 0px -2px;
+  font-size: 12px;
+  line-height: 6px;
+  color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.navigation span:hover {
+  color: #f06c64;
 }
 
 .main {
