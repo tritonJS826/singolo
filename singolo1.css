@@ -41,7 +41,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   height: 100%;
   width: 370px;
   margin: 0px 40px 0px 0px;
@@ -49,9 +49,9 @@ h1 {
 
 .navigation a {
   display: inline-block;
-  margin: 10px -1px 0px -2px;
+  margin: 12% -1px 0px -2px;
   font-size: 12px;
-  line-height: 6px;
+  line-height: 100%;
   font-weight: bold;
   color: #f2f2f2;
   font-family: "Lato";
@@ -109,9 +109,6 @@ h1 {
   height: 492px;
   background: #f2f2f2;
   border-bottom: solid 5px #ffffff;
-  /* padding-top: 7%;
-  padding-left: 3%;
-  padding-right: 3%; */
 }
 
 .footer .h2 {
@@ -156,27 +153,31 @@ h1 {
 }
 
 .ellipseBack {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3%;
   margin-left: -1%;
   background-image: url(./assets/img/Ellipse.svg);
-  background-size: cover;
-  width: 59px;
-  height: 59px;
+  background-size: contain;
+  width: 21%;
+  height: 61%;
+  background-repeat: no-repeat;
   border-radius: 29px;
+}
+
+.ellipseBack:hover {
   background-color: #eb5055;
 }
 
 .card img {
-  width: 32px;
-  height: 32px;
+  width: 62%;
+  height: 62%;
 }
 
 .cardText {
   margin-top: 3%;
-  margin-left: 7%;
+  margin-left: 20px;
 }
 
 .card h3 {
