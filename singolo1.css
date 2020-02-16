@@ -141,8 +141,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  padding: 3%;
   height: 48%;
+  padding-left:  3.3%;
+  padding-top: 3%;
+  padding-right: 3%;
+
+  /* margin-left: 0.1%; */
 }
 
 .card {
@@ -159,32 +163,19 @@ h1 {
   margin-top: 3%;
   margin-left: -1%;
   background-image: url(./assets/img/Ellipse.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 21%;
+  width: 20%;
   height: 61%;
   border-radius: 29px;
 }
 
-.ellipseBack:hover {
-  background: rgba(240,108,100,0.21);
-  background: -moz-radial-gradient(center, ellipse cover, rgba(240,108,100,0.21) 0%, rgba(246,41,12,0.21) 0%, rgba(232,219,218,0.59) 48%, rgba(245,238,237,1) 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(240,108,100,0.21)), color-stop(0%, rgba(246,41,12,0.21)), color-stop(48%, rgba(232,219,218,0.59)), color-stop(100%, rgba(245,238,237,1)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(240,108,100,0.21) 0%, rgba(246,41,12,0.21) 0%, rgba(232,219,218,0.59) 48%, rgba(245,238,237,1) 100%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(240,108,100,0.21) 0%, rgba(246,41,12,0.21) 0%, rgba(232,219,218,0.59) 48%, rgba(245,238,237,1) 100%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(240,108,100,0.21) 0%, rgba(246,41,12,0.21) 0%, rgba(232,219,218,0.59) 48%, rgba(245,238,237,1) 100%);
-  background: radial-gradient(ellipse at center, rgba(240,108,100,0.21) 0%, rgba(246,41,12,0.21) 0%, rgba(232,219,218,0.59) 48%, rgba(245,238,237,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f06c64', endColorstr='#f5eeed', GradientType=1 );
-}
-
 .card img {
-  width: 62%;
-  height: 62%;
+  margin: auto;
 }
 
 .cardText {
   margin-top: 3%;
   margin-left: 20px;
+  text-overflow: ellipsis;
 }
 
 .card h3 {
@@ -199,8 +190,8 @@ h1 {
 }
 
 .card p {
-  width: 219px;
-  height: 128px;
+  /* width: 219px;
+  height: 128px; */
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
