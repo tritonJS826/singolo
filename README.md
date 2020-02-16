@@ -3,4 +3,4 @@
 
 
 посмотреть:
- https://tritonjs826.github.io/singolo/index.html
+ https://tritonjs826.github.io/singolo/singolo1.html
