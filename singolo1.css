@@ -102,17 +102,17 @@ nav ul {
 }
 
 .navigation ul li:before {
-	color: #323746;
-	content:"\2022";
-	font-size: 8px;
-	padding-right: 15px;
-	line-height: 18px;
+  color: #323746;
+  content: "\2022";
+  font-size: 8px;
+  padding-right: 15px;
+  line-height: 18px;
   top: 0;
 }
 
 .navigation ul li:first-child:before {
-	content: "";
-	padding-right: 0;
+  content: "";
+  padding-right: 0;
 }
 
 .navigation ul li a {
@@ -134,6 +134,7 @@ nav ul {
   font-weight: 700;
   text-align: left;
 }
+
 .navigation a:hover {
   color: #f06c64;
 }
@@ -201,14 +202,19 @@ nav ul {
   margin-top: 26px;
   width: 940px;
   height: 57px;
-  font-size: 18px;
   line-height: 30px;
+  font-size: 18px;
+  letter-spacing: -.0025em;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
   text-align: left;
   padding-left: 4%;
-	letter-spacing: -.0025em;
+}
+
+.crutch {
+  margin-left: -2px;
+  letter-spacing: -.013em;
 }
 
 .cards {
@@ -267,7 +273,7 @@ nav ul {
   /* width: 219px;
   height: 128px; */
   font-size: 12px;
-  line-height: 22px;
+  line-height: 21px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
