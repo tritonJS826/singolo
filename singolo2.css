@@ -61,9 +61,74 @@ body {
   border-bottom: solid 6px #323746;
 }
 
+.wrapper-2 .portfolio>h2 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin: 0px 0px 0px 40px;
+  padding-top: 72px;
+  letter-spacing: 0.2px;
+}
+
+.wrapper-2 .portfolio-text {
+  width: 940px;
+  height: 37px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  margin: 25px 0px 0px 40px;
+  letter-spacing: -0.21px;
+}
+
+.wrapper-2 .portfolio-buttons {
+  display: flex;
+  margin-left: 31px;
+  margin-top:2px;
+}
+
+.wrapper-2 .portfolio-button {
+  height:20px;
+  padding: 0px 5px 1px 6px;
+  border-radius: 5px;
+  border: 1px solid #666d89;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  margin-left: 11px;
+}
+
+.wrapper-2 .portfolio-img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0px 0px 30px;
+}
+
+.wrapper-2 .portfolio-img>div {
+  width: 220px;
+  height: 185px;
+  background: red;
+  margin: 10px;
+  margin-bottom:12px;
+}
 
 .wrapper-2 .about-us {
   height: 728px;
   background-color: #f2f2f2;
   border-bottom: solid 6px #ffffff;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/assets/fonts/Lato-Regular.ttf");
+  font-style: normal;
 }
