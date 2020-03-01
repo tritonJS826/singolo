@@ -93,17 +93,23 @@ body {
 }
 
 .wrapper-2 .portfolio-button {
-  height: 20px;
+  height: 19px;
   padding: 0px 5px 1px 6px;
   border-radius: 5px;
   border: 1px solid #666d89;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 20px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
   text-align: left;
   margin-left: 11px;
+}
+
+.wrapper-2 .portfolio-button:hover {
+  cursor: pointer;
+  color: #dedede;
+  border: solid 1px #dedede;
 }
 
 .wrapper-2 .portfolio-img {
@@ -209,10 +215,13 @@ body {
 }
 
 .wrapper-2 .about-us .card .icon {
-  margin-top:20px;
+  margin-top: 20px;
   margin-right: 1px;
 }
 
+.wrapper-2 .about-us .card .icon:hover {
+  cursor: pointer;
+}
 
 @font-face {
   font-family: "Lato";
