@@ -54,3 +54,15 @@ body {
   /* margin:auto; */
 }
 
+.wrapper-3 .get--a--quote {
+  height: 648px;
+  width: auto;
+  background-color: #f06c64;
+  border-bottom: solid 6px #ea676b;
+}
+
+.wrapper-3 .footer {
+  height:76px;
+  width:auto;
+  background-color: #2d303a;
+}
