@@ -567,6 +567,11 @@ nav ul {
   padding-left: 15px;
   padding-top: 7px;
   margin-bottom: 16px;
+  resize: none; 
+}
+
+.wrapper-3 .form--and--info .comment::placeholder { 
+  color: #f0d8d9;
 }
 
 .wrapper-3 .form--and--info .submit {
@@ -676,7 +681,7 @@ nav ul {
   align-items: center;
 }
 
-.wrapper-3 .copyright {
+.wrapper-3 .footer .copyright {
   text-decoration: none;
   font-size: 12px;
   line-height: 22px;
@@ -685,4 +690,8 @@ nav ul {
   font-weight: 400;
   text-align: left;
   letter-spacing: -0.01em;
+}
+
+.wrapper-3 .footer .icons > img:hover {
+cursor:pointer;
 }
