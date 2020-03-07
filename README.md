@@ -14,4 +14,4 @@ singolo3:
  https://tritonjs826.github.io/singolo/singolo3.html
 
 итоговый проект(объедининие трех предыдущих):
- https://tritonjs826.github.io/singolo/index.html
+ https://tritonjs826.github.io/singolo/
