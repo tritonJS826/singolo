@@ -54,6 +54,8 @@ body {
   /* margin:auto; */
 }
 
+.wrapper-3 {}
+
 .wrapper-3 .get--a--quote {
   height: 648px;
   width: auto;
@@ -61,8 +63,224 @@ body {
   border-bottom: solid 6px #ea676b;
 }
 
+.wrapper-3 .get--a--quote h2 {
+  padding-top: 71px;
+  margin-left: 40px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  letter-spacing: -.006em;
+}
+
+.wrapper-3 .get--a--quote .description {
+  width: 940px;
+  height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 26px;
+  letter-spacing: -.0025em;
+}
+
+.wrapper-3 .form--and--info {
+  display: flex;
+  width: 940px;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+
+.wrapper-3 .form--and--info>form {
+  width: 620px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-3 .form--and--info .name {
+  width: 603px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 16px;
+}
+
+.wrapper-3 .form--and--info .email {
+  width: 603px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 16px;
+}
+
+.wrapper-3 .form--and--info .subject {
+  width: 603px;
+  height: 36px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.wrapper-3 .form--and--info .comment {
+  width: 603px;
+  height: 195px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 7px;
+  margin-bottom: 16px;
+}
+
+.wrapper-3 .form--and--info .submit {
+  visibility: hidden;
+  width: 619px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: center;
+  padding-left: 15px;
+  margin-bottom: 16px;
+}
+
+.wrapper-3 .info {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.wrapper-3 .info h3 {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+  margin-top: 2px;
+  letter-spacing: 0.005em;
+}
+
+.wrapper-3 .info .description {
+  width: 300px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  letter-spacing: -.005em;
+}
+
+.wrapper-3 .contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 52px;
+  margin-left: 10px;
+}
+
+.wrapper-3 .contactsLocation,
+.wrapper-3 .contactsPhone,
+.wrapper-3 .contactsMail {
+  text-align: justify;
+  letter-spacing: 0.1px;
+  word-spacing: -1.7px;
+}
+
+.wrapper-3 .contactsLocation {
+  margin-left: -7px;
+}
+
+.wrapper-3 .contactsPhone {
+  margin-top: -1px;
+  margin-left: -9px;
+}
+
+.wrapper-3 .contactsMail {
+  margin-left: -10px;
+}
+
+.wrapper-3 .contacts .contactIcons {
+  margin-right: 10px;
+}
+
+.wrapper-3 .contactsLocation,
+.wrapper-3 .contactsPhone,
+.wrapper-3 .contactsMail {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
 .wrapper-3 .footer {
-  height:76px;
-  width:auto;
+  height: 76px;
+  width: auto;
   background-color: #2d303a;
+  display: flex;
+  height: 76px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+}
+
+.wrapper-3 .copyright {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: -0.01em;
 }
