@@ -368,6 +368,11 @@ nav ul {
   margin: 10px;
   margin-bottom: 12px;
 }
+.wrapper-2 .portfolio-img>div:hover {
+  cursor:pointer;
+  opacity:0.6;
+}
+
 
 /* Показываем только 12 элементов */
 .wrapper-2 .portfolio-img>div:nth-child(n+13) {
@@ -428,6 +433,10 @@ nav ul {
 
 .wrapper-2 .about-us .card>img {
   width: 100%;
+}
+.wrapper-2 .about-us .card>img:hover {
+  cursor:pointer;
+  opacity: 0.6;
 }
 
 .wrapper-2 .about-us .card>h2 {
