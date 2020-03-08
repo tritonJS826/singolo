@@ -408,9 +408,7 @@ nav ul {
   justify-content: space-between;
   border: solid 0px black;
   width: 300px;
-  /* margin-left:auto;
-  margin-right:auto; */
-  /* margin-right : 14px; */
+  margin: 0px;
 }
 
 .wrapper-2 .about-us .card>img {
@@ -439,6 +437,10 @@ nav ul {
   margin-left: 0;
   padding-top: 7px;
   letter-spacing: 0px;
+}
+
+.wrapper-2 .about-us .card .icons {
+ /*margin-top:2.4px;*/
 }
 
 .wrapper-2 .about-us .card .icon {
@@ -506,7 +508,7 @@ nav ul {
 
 .wrapper-3 .form--and--info .name {
   width: 603px;
-  height: 36px;
+  height: 39px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -522,7 +524,7 @@ nav ul {
 
 .wrapper-3 .form--and--info .email {
   width: 603px;
-  height: 36px;
+  height: 39px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -538,7 +540,7 @@ nav ul {
 
 .wrapper-3 .form--and--info .subject {
   width: 603px;
-  height: 36px;
+  height: 39px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -690,6 +692,10 @@ nav ul {
   font-weight: 400;
   text-align: left;
   letter-spacing: -0.01em;
+}
+
+.wrapper-3 .footer .icons img{
+margin-top:7px;
 }
 
 .wrapper-3 .footer .icons > img:hover {
