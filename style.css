@@ -1,7 +1,8 @@
 * {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -179,10 +180,12 @@ nav ul {
 
 .arrowLeft:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .arrowRight:hover {
   cursor: pointer;
+  opacity: 0.5;
 }
 
 .services {
@@ -214,6 +217,8 @@ nav ul {
   font-weight: 300;
   text-align: left;
   padding-left: 4%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .crutch {
@@ -239,6 +244,11 @@ nav ul {
   width: 31%;
   height: 41%;
 }
+.card h2 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .ellipseBack {
   display: flex;
@@ -259,7 +269,8 @@ nav ul {
 .cardText {
   margin-top: 3%;
   margin-left: 20px;
-  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 
 .card h3 {
@@ -444,7 +455,7 @@ nav ul {
 }
 
 .wrapper-2 .about-us .card .icons {
- /*margin-top:2.4px;*/
+  /*margin-top:2.4px;*/
 }
 
 .wrapper-2 .about-us .card .icon {
@@ -454,6 +465,7 @@ nav ul {
 
 .wrapper-2 .about-us .card .icon:hover {
   cursor: pointer;
+  opacity:0.5;
 }
 
 @font-face {
@@ -581,7 +593,6 @@ nav ul {
 }
 
 .wrapper-3 .form--and--info .submit {
-  visibility: hidden;
   width: 619px;
   height: 38px;
   border-radius: 5px;
@@ -596,6 +607,12 @@ nav ul {
   padding-left: 15px;
   margin-bottom: 16px;
 }
+
+.wrapper-3 .form--and--info .submit:hover {
+  border: solid black 1px;
+  opacity:0.5;
+}
+
 
 .wrapper-3 .info {
   width: 300px;
@@ -698,10 +715,11 @@ nav ul {
   letter-spacing: -0.01em;
 }
 
-.wrapper-3 .footer .icons img{
-margin-top:7px;
+.wrapper-3 .footer .icons img {
+  margin-top: 7px;
 }
 
-.wrapper-3 .footer .icons > img:hover {
-cursor:pointer;
+.wrapper-3 .footer .icons>img:hover {
+  cursor: pointer;
+  opacity:0.5;
 }
