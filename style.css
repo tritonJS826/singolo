@@ -217,7 +217,7 @@ nav ul {
   letter-spacing: -.013em;
 }
 
-.cards {
+.services .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
