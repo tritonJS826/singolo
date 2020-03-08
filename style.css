@@ -1,3 +1,7 @@
+* {
+  padding:0;
+  margin:0;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -508,7 +512,7 @@ nav ul {
 
 .wrapper-3 .form--and--info .name {
   width: 603px;
-  height: 39px;
+  height: 38px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -524,7 +528,23 @@ nav ul {
 
 .wrapper-3 .form--and--info .email {
   width: 603px;
-  height: 39px;
+  height: 38px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 14px;
+}
+
+.wrapper-3 .form--and--info .subject {
+  width: 603px;
+  height: 38px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -538,25 +558,9 @@ nav ul {
   margin-bottom: 16px;
 }
 
-.wrapper-3 .form--and--info .subject {
-  width: 603px;
-  height: 39px;
-  border-radius: 5px;
-  border: none;
-  background-color: #d6564f;
-  font-size: 12px;
-  line-height: 22px;
-  color: #f0d8d9;
-  font-family: "Lato";
-  font-weight: 400;
-  text-align: left;
-  padding-left: 15px;
-  margin-bottom: 15px;
-}
-
 .wrapper-3 .form--and--info .comment {
   width: 603px;
-  height: 195px;
+  height: 193px;
   border-radius: 5px;
   border: none;
   background-color: #d6564f;
@@ -569,10 +573,10 @@ nav ul {
   padding-left: 15px;
   padding-top: 7px;
   margin-bottom: 16px;
-  resize: none; 
+  resize: none;
 }
 
-.wrapper-3 .form--and--info .comment::placeholder { 
+.wrapper-3 .form--and--info .comment::placeholder {
   color: #f0d8d9;
 }
 
