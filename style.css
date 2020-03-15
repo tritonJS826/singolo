@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -56,7 +57,7 @@ table {
 body {
   /* width: 1020px; */
   max-width: 1020px;
-  /* margin:auto; */
+  margin: auto;
 }
 
 h1 {
@@ -134,8 +135,10 @@ nav ul {
   color: #f06c64;
 }
 
-.navigation a:hover {
-  color: #f06c64;
+.navigation a .active {
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
+  -moz-box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
+  box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
 }
 
 .main {
@@ -180,6 +183,14 @@ nav ul {
 .arrowRight:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.slide1 {
+  display: block;
+}
+
+.slide2 {
+  display: none;
 }
 
 .services {
@@ -238,6 +249,7 @@ nav ul {
   width: 31%;
   height: 41%;
 }
+
 .card h2 {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -348,6 +360,11 @@ nav ul {
   border: solid 1px #dedede;
 }
 
+.wrapper-2 .portfolio-button.active {
+  color: #dedede;
+  border: solid 1px #dedede;
+}
+
 .wrapper-2 .portfolio-img {
   display: flex;
   flex-direction: row;
@@ -362,11 +379,17 @@ nav ul {
   margin: 10px;
   margin-bottom: 12px;
 }
-.wrapper-2 .portfolio-img>div:hover {
-  cursor:pointer;
-  opacity:0.6;
+
+.wrapper-2 .portfolio-img>div.active {
+  margin: 5px;
+  margin-bottom: 7px;
+  border: solid #F06C64 5px;
 }
 
+.wrapper-2 .portfolio-img>div:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
 
 /* Показываем только 12 элементов */
 .wrapper-2 .portfolio-img>div:nth-child(n+13) {
@@ -428,8 +451,9 @@ nav ul {
 .wrapper-2 .about-us .card>img {
   width: 100%;
 }
+
 .wrapper-2 .about-us .card>img:hover {
-  cursor:pointer;
+  cursor: pointer;
   opacity: 0.6;
 }
 
@@ -468,7 +492,7 @@ nav ul {
 
 .wrapper-2 .about-us .card .icon:hover {
   cursor: pointer;
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 @font-face {
@@ -613,9 +637,8 @@ nav ul {
 
 .wrapper-3 .form--and--info .submit:hover {
   border: solid black 1px;
-  opacity:0.5;
+  opacity: 0.5;
 }
-
 
 .wrapper-3 .info {
   width: 300px;
@@ -724,5 +747,42 @@ nav ul {
 
 .wrapper-3 .footer .icons>img:hover {
   cursor: pointer;
-  opacity:0.5;
+  opacity: 0.5;
+}
+
+.wrapper-3 .message-block {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* opacity: 0.3; */
+  background: #0008;
+}
+
+.wrapper-3 .hidden {
+  display: none;
+}
+
+.wrapper-3 .message {
+  position: absolute;
+  top: 33%;
+  left: 33%;
+  text-align: left;
+  padding: 1%;
+  height: 30%;
+  width: 30%;
+  background-color: #e6c875;
+  border-radius: 10px;
+}
+
+.wrapper-3 .close-button {
+  display: inline-block;
+  position: absolute;
+  bottom: 1%;
+  left: 40%;
+  color: white;
+  background: black;
+  border-radius: 3px;
+  width: 50px;
 }

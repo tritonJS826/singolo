@@ -16,25 +16,32 @@
       <h1 class="logoSpan">SINGOLO<span class="red">*</span></h1>
     </div>
     <nav class="navigation">
-      <ul>
-        <li><a href="#"><span class="red">HOME</span></a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">CONTACT</a></li>
+      <ul id="menu">
+        <li><a href="#"><span>HOME</span></a></li>
+        <li><a href="#services"><span>SERVICES</span></a></li>
+        <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
+        <li><a href="#about--us"><span>ABOUT</span></a></li>
+        <li><a href="#contact"><span>CONTACT</span></a></li>
       </ul>
     </nav>
   </header>
 
 
   <div class="main">
-    <img src="./assets/img/arrowLeft.svg" alt="img" class="arrowLeft">
-    <img src="./assets/img/iPhoneVertical.png" alt="img" class="iPhoneVertical">
-    <img src="./assets/img/iPhoneHorizontal.png" alt="img" class="iPhoneGorizontal">
-    <img src="./assets/img/arrowRight.svg" alt="img" class="arrowRight">
+    <div class="slider">
+      <img src="./assets/img/arrowLeft.svg" alt="img" class="arrowLeft" id="left-arrow">
+      <img src="./assets/img/arrowRight.svg" alt="img" class="arrowRight" id="right-arrow">
+      <div class="slide1" id="slide1">
+        <img src="./assets/img/iPhoneVertical.png" alt="img" class="iPhoneVertical" id="vertical-phone">
+        <img src="./assets/img/iPhoneHorizontal.png" alt="img" class="iPhoneGorizontal" id="horizontal-phone">
+      </div>
+      <div class="slide2" id="slide2">
+        <span>!!!!!!!!!!!!!!!!!!!!!!slide2</span>
+      </div>
+    </div>
   </div>
   <section class="services">
-    <h2 class="h2">Our Services</h2>
+    <h2 class="h2"><a name="services"></>Our Services</h2>
     <p class="servicesDescription">Fusce dapibus, tellus ac cursus commodo,
       tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
       porttitor ligula, eget <span class="crutch">lacinia odio sem nec elit.
@@ -94,17 +101,17 @@
 
 
   <div class="wrapper-2">
-    <section class="portfolio">
+    <section class="portfolio"><a name="portfolio"></a>
       <h2>Portfolio</h2>
       <div class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor
         ligula, eget lacinia odio sem nec elit.</div>
-      <div class="portfolio-buttons">
+      <div class="portfolio-buttons" id="portfolio-buttons">
         <div class="portfolio-button">All</div>
         <div class="portfolio-button">Web Design</div>
         <div class="portfolio-button">Graphic Design</div>
         <div class="portfolio-button">Artwork</div>
       </div>
-      <div class="portfolio-img">
+      <div class="portfolio-img" id="portfolio-img">
         <div><img src="./assets/img/img1.jpg" alt="img"></div>
         <div><img src="./assets/img/img2.jpg" alt="img"></div>
         <div><img src="./assets/img/img3.jpg" alt="img"></div>
@@ -117,12 +124,12 @@
         <div><img src="./assets/img/img10.jpg" alt="img"></div>
         <div><img src="./assets/img/img11.jpg" alt="img"></div>
         <div><img src="./assets/img/img12.jpg" alt="img"></div>
-        <div><img src="./assets/img/img12.jpg" alt="img"></div>
+
       </div>
 
     </section>
 
-    <section class="about-us">
+    <section class="about-us"><a name="about--us"></a>
       <h2>About Us</h2>
       <p class="about-description">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -179,7 +186,7 @@
 
 
   <div class="wrapper-3">
-    <div class="get--a--quote">
+    <div class="get--a--quote"><a name="contact"></a>
       <h2>Get a Quote</h2>
       <div class="description">
         Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -187,17 +194,22 @@
         eget <span class="letterspace">lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
           tortor mauris condimentum nibh.</span>
       </div>
-
+      <div class="message-block hidden" id="message-block">
+        <div class="message">
+          <div id="message"></div>
+          <button class="close-button" id="closeMessageBlock">OK</button>
+        </div>
+      </div>
       <div class="form--and--info">
         <form>
-          <input type="text" class="name" name="name" placeholder="Name (Required)">
-          <input type="email" class="email" name="email" placeholder="Email (Required)" required>
-          <input type="text" class="subject" name="subject" placeholder="Subject" required>
-          <textarea class="comment" name="comment" placeholder="Describe your project in detail..."></textarea>
-          <input class="submit" type="submit" name="submit" value="Submit">
+          <input type="text" id="contactName" class="name" name="name" placeholder="Тема">
+          <input type="email" id="contactMail" class="email" name="email" placeholder="Email (Required)" required>
+          <input type="text" id="contactSubject" class="subject" name="subject" placeholder="Описание">
+          <textarea class="comment" id="contactComment" name="comment" placeholder="Describe your project in detail..."></textarea>
+          <input class="submit" id="contactSubmit" type="submit" name="submit" value="Submit">
         </form>
-        <section class="info">
 
+        <section class="info">
           <h3>Contact Information</h3>
           <p class="description"> Quisque hendrerit purus dapibus, ornare nibh vitae,
             viver-<wbr>ra nibh. Fusce vitae aliquam tellus.
@@ -231,5 +243,7 @@
       </div>
     </footer>
   </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
