@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  transition: all 0.3s;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -62,6 +63,71 @@ body {
 
 h1 {
   display: none;
+}
+
+.sidebar {
+  display: none;
+  margin-right: 20px;
+}
+
+#toggle {
+  display: none;
+}
+
+.leftbar {
+  position: absolute;
+  width: 80%;
+  height: 600px;
+  background-color: #2c3e50;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  left: -102%;
+  /* for sidebar to stay on top */
+  z-index: 1;
+  transition: left 0.5s ease-in-out;
+}
+
+.leftbar .logo {
+  width: 0;
+}
+
+.exit {
+  cursor: pointer;
+  font-weight: 800;
+  color: white;
+  float: left;
+  padding: 1.1rem;
+}
+
+.content {
+  position: block;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.5s ease-in-out;
+  margin-right: 50px;
+}
+
+.button {
+  position: absolute;
+  cursor: pointer;
+  font-weight: 800;
+  color: white;
+  font-size: 40px;
+  padding: 20px 50px;
+}
+
+.content p {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 50px;
+}
+
+#toggle:checked~.leftbar {
+  left: 0;
+}
+
+#toggle:checked~.content {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header {
@@ -128,7 +194,7 @@ nav ul {
   color: #f2f2f2;
   font-family: "Lato";
   font-weight: 700;
-  text-align: left;
+  text-align: justify;
 }
 
 .navigation ul li a:hover {
@@ -142,7 +208,7 @@ nav ul {
 }
 
 .main {
-  height: 595px;
+  height: 58vw;
   background: #f06c64;
   border-bottom: solid 5px #ea676b;
   position: relative;
@@ -151,28 +217,34 @@ nav ul {
 .arrowLeft {
   display: inline-block;
   position: absolute;
-  margin-top: 280px;
+  margin-top: 27vw;
   left: 4%;
+  width: 1.6vw;
+  height: 2.7vw;
 }
 
 .iPhoneVertical {
   display: inline-block;
   position: absolute;
-  left: 110px;
-  top: -17px;
+  left: 10vw;
+  top: 1.7vw;
+  width: 57%;
 }
 
 .iPhoneGorizontal {
   display: inline-block;
   position: absolute;
-  right: 80px;
-  top: 69px;
+  right: 8vw;
+  top: 6.7vw;
+  width: 57%;
 }
 
 .arrowRight {
   position: absolute;
-  margin-top: 280px;
+  margin-top: 27vw;
   right: 4%;
+  width: 1.6vw;
+  height: 2.7vw;
 }
 
 .arrowLeft:hover {
@@ -193,10 +265,15 @@ nav ul {
   display: none;
 }
 
+.slide2>img {
+  width: 100%;
+  height: 100%;
+}
+
 .services {
-  height: 492px;
   background: #f2f2f2;
   border-bottom: solid 5px #ffffff;
+  padding-bottom: 20px;
 }
 
 .services .h2 {
@@ -205,48 +282,42 @@ nav ul {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   padding-left: 4%;
   padding-top: 7%;
 }
 
 .services .servicesDescription {
   margin-top: 26px;
-  width: 940px;
-  height: 57px;
   line-height: 30px;
   font-size: 18px;
   letter-spacing: -.0025em;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
   padding-left: 4%;
+  padding-right: 4%;
   text-overflow: ellipsis;
   overflow: hidden;
-}
-
-.crutch {
-  margin-left: -2px;
-  letter-spacing: -.013em;
 }
 
 .services .cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-around;
+  align-content: space-around;
   height: 48%;
   padding-left: 3.3%;
-  padding-top: 3%;
+  padding-top: 5%;
   padding-right: 3%;
 }
 
 .card {
+  padding: 0.4%;
   display: flex;
-  margin: 1%;
-  width: 31%;
+  width: 305px;
   height: 41%;
 }
 
@@ -285,7 +356,7 @@ nav ul {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 4%;
   line-height: 16px;
 }
@@ -303,8 +374,6 @@ nav ul {
 }
 
 .wrapper-2 .portfolio {
-  /*width: 1020px;*/
-  height: 864px;
   background-color: #2d303a;
   border-bottom: solid 6px #323746;
 }
@@ -315,22 +384,20 @@ nav ul {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   margin: 0px 0px 0px 40px;
   padding-top: 72px;
   letter-spacing: 0.2px;
 }
 
 .wrapper-2 .portfolio-text {
-  width: 940px;
-  height: 37px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
-  margin: 25px 0px 0px 40px;
+  text-align: justify;
+  margin: 30px 35px 15px 35px;
   letter-spacing: -0.21px;
 }
 
@@ -350,7 +417,7 @@ nav ul {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   margin-left: 11px;
 }
 
@@ -369,7 +436,8 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px 0px 0px 30px;
+  justify-content: space-around;
+  margin: 30px 24px 0px 24px;
 }
 
 .wrapper-2 .portfolio-img>div {
@@ -397,9 +465,9 @@ nav ul {
 }
 
 .wrapper-2 .about-us {
-  height: 728px;
   background-color: #f2f2f2;
   border-bottom: solid 6px #ffffff;
+  padding-bottom: 20px;
 }
 
 .wrapper-2 .about-us>h2 {
@@ -408,35 +476,31 @@ nav ul {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   margin: 0px 0px 0px 40px;
   padding-top: 72px;
   letter-spacing: 0px;
 }
 
 .wrapper-2 .about-description {
-  height: 57px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
   margin-left: 40px;
   margin-right: 40px;
   padding-top: 26px;
   letter-spacing: -.003em;
 }
 
-.wrapper-2 .about-description .crutch {
-  letter-spacing: -.013em;
-}
-
 .wrapper-2 .about-us .cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 45px 40px 0px 40px
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 45px 20px 0px 20px
 }
 
 .wrapper-2 .about-us .card {
@@ -444,7 +508,7 @@ nav ul {
   flex-direction: column;
   justify-content: space-between;
   border: solid 0px black;
-  width: 300px;
+  width: 30vw;
   margin: 0px;
 }
 
@@ -463,27 +527,25 @@ nav ul {
   color: #666d89;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   margin-top: 20px;
   letter-spacing: -.003em;
 }
 
 .wrapper-2 .about-us .card>p {
-  width: 301px;
+  max-width: 301px;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   margin-left: 0;
   padding-top: 7px;
   letter-spacing: 0px;
 }
 
-.wrapper-2 .about-us .card .icons {
-  /*margin-top:2.4px;*/
-}
+.wrapper-2 .about-us .card .icons {}
 
 .wrapper-2 .about-us .card .icon {
   margin-top: 20px;
@@ -504,7 +566,7 @@ nav ul {
 .wrapper-3 {}
 
 .wrapper-3 .get--a--quote {
-  height: 648px;
+  /* height: 648px; */
   width: auto;
   background-color: #f06c64;
   border-bottom: solid 6px #ea676b;
@@ -513,44 +575,45 @@ nav ul {
 .wrapper-3 .get--a--quote h2 {
   padding-top: 71px;
   margin-left: 40px;
+  margin-right: 40px;
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   letter-spacing: -.006em;
 }
 
 .wrapper-3 .get--a--quote .description {
-  width: 940px;
-  height: 57px;
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 300;
-  text-align: left;
+  text-align: justify;
   margin-left: 40px;
+  margin-right: 40px;
   margin-top: 26px;
   letter-spacing: -.0025em;
 }
 
 .wrapper-3 .form--and--info {
   display: flex;
-  width: 940px;
+  width: 94vw;
   margin-left: 40px;
   margin-top: 45px;
+  flex-wrap: wrap;
 }
 
 .wrapper-3 .form--and--info>form {
-  width: 620px;
+  width: 50vw;
   display: flex;
   flex-direction: column;
 }
 
 .wrapper-3 .form--and--info .name {
-  width: 603px;
+  width: 50vw;
   height: 38px;
   border-radius: 5px;
   border: none;
@@ -560,13 +623,13 @@ nav ul {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   padding-left: 15px;
   margin-bottom: 16px;
 }
 
 .wrapper-3 .form--and--info .email {
-  width: 603px;
+  width: 50vw;
   height: 38px;
   border-radius: 5px;
   border: none;
@@ -576,13 +639,13 @@ nav ul {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   padding-left: 15px;
   margin-bottom: 14px;
 }
 
 .wrapper-3 .form--and--info .subject {
-  width: 603px;
+  width: 50vw;
   height: 38px;
   border-radius: 5px;
   border: none;
@@ -592,13 +655,13 @@ nav ul {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   padding-left: 15px;
   margin-bottom: 16px;
 }
 
 .wrapper-3 .form--and--info .comment {
-  width: 603px;
+  width: 50vw;
   height: 193px;
   border-radius: 5px;
   border: none;
@@ -608,7 +671,7 @@ nav ul {
   color: #f48c8f;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   padding-left: 15px;
   padding-top: 7px;
   margin-bottom: 16px;
@@ -620,7 +683,7 @@ nav ul {
 }
 
 .wrapper-3 .form--and--info .submit {
-  width: 619px;
+  width: 52vw;
   height: 38px;
   border-radius: 5px;
   border: none;
@@ -645,7 +708,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .wrapper-3 .info h3 {
@@ -654,13 +717,13 @@ nav ul {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 900;
-  text-align: left;
+  text-align: justify;
   margin-top: 2px;
   letter-spacing: 0.005em;
 }
 
 .wrapper-3 .info .description {
-  width: 300px;
+  /* width: 300px; */
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
@@ -714,7 +777,7 @@ nav ul {
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
 }
 
 .wrapper-3 .footer {
@@ -724,7 +787,7 @@ nav ul {
   display: flex;
   height: 76px;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 40px;
   padding-right: 40px;
   align-items: center;
@@ -737,7 +800,7 @@ nav ul {
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   letter-spacing: -0.01em;
 }
 
@@ -768,7 +831,7 @@ nav ul {
   position: absolute;
   top: 33%;
   left: 33%;
-  text-align: left;
+  text-align: justify;
   padding: 1%;
   height: 30%;
   width: 30%;
@@ -786,3 +849,115 @@ nav ul {
   border-radius: 3px;
   width: 50px;
 }
+
+@media (max-width:768px) {
+  .wrapper-3 .info {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .wrapper-3 .form--and--info>form {
+    width: 85vw;
+  }
+
+  .wrapper-3 .form--and--info .name {
+    width: 85vw;
+  }
+
+  .wrapper-3 .form--and--info .email {
+    width: 85vw;
+  }
+
+  .wrapper-3 .form--and--info .subject {
+    width: 85vw;
+  }
+
+  .wrapper-3 .form--and--info .comment {
+    width: 85vw;
+  }
+
+  .wrapper-3 .form--and--info .submit {
+    width: 88vw;
+  }
+
+  .wrapper-3 .info {
+    width: 85vw;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: inline-block;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  nav {
+    width: 372px;
+    margin-right: 40px;
+    margin-top: 3px;
+    letter-spacing: -.02em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .navigation--mini ul li {
+    margin: 20px 0 0 10px;
+  }
+
+  .navigation--mini ul li:before {
+    content: "   ";
+    font-size: 12px;
+    padding-right: 15px;
+    line-height: 18px;
+    top: 0;
+  }
+
+
+  .navigation--mini ul li a {
+    padding-left:20px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+    color: #f2f2f2;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: justify;
+  }
+
+  .navigation--mini ul li a:hover {
+    color: #f06c64;
+  }
+
+  .navigation--mini a .active {
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
+    box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
+  }
+}
+
+@media (max-width: 527px) {
+  .wrapper-2 .about-us .card {
+    width: 80vw;
+    padding-bottom: 20px;
+  }
+
+  .wrapper-2 .portfolio-img>div {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .wrapper-2 .portfolio-img>div>img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@import "./styleMob.css";

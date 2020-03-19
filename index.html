@@ -12,6 +12,30 @@
 
 <body>
   <header class="header">
+    <div class="sidebar">
+      <input type='checkbox' id='toggle' class="toggle"></input>
+      <!-- Menu -->
+      <aside class='leftbar'>
+        <label for='toggle' class='exit'>X</label>
+        <div class="logo">
+          <h1 class="logoSpan">SINGOLO<span class="red">*</span></h1>
+        </div>
+        <nav class="navigation--mini">
+          <ul id="menu">
+            <li><a href="#"><span>HOME</span></a></li>
+            <li><a href="#services"><span>SERVICES</span></a></li>
+            <li><a href="#portfolio"><span>PORTFOLIO</span></a></li>
+            <li><a href="#about--us"><span>ABOUT</span></a></li>
+            <li><a href="#contact"><span>CONTACT</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Content -->
+      <div class='content'>
+        <label for='toggle' class='button'>=</label>
+      </div>
+    </div>
+
     <div class="logo">
       <h1 class="logoSpan">SINGOLO<span class="red">*</span></h1>
     </div>
@@ -234,7 +258,7 @@
       </div>
     </div>
     <footer class="footer">
-      <p class="copyright">&copy; Copyright 2013</p>
+      <!--<p class="copyright">&copy; Copyright 2013</p>-->
       <div class="icons">
         <img src="./assets/img/facebook.png" alt="facebook.png" class="borderIcons">
         <img src="./assets/img/google+.png" alt="google+.png" class="borderIcons">
