@@ -1,5 +1,4 @@
-@media (max-width: 600px) {
-  .wrapper-2 .about-us .card {
-    width: 80vw;
-  }
+@media (min-width: 1050px) {
+  .arrowLeft {
+    margin-top: 280px;
 }

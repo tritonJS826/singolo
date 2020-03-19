@@ -208,8 +208,9 @@ nav ul {
 }
 
 .main {
-  height: 58vw;
   background: #f06c64;
+  height: 58vw;
+  max-height: 600px;
   border-bottom: solid 5px #ea676b;
   position: relative;
 }
@@ -850,6 +851,56 @@ nav ul {
   width: 50px;
 }
 
+@media (min-width: 1050px) {
+  .arrowLeft {
+    margin-top: 280px;
+  }
+
+  .iPhoneVertical {
+    left: 150px;
+    top: auto;
+  }
+
+  .iPhoneGorizontal {
+    display: inline-block;
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    width: 57%;
+  }
+
+  .arrowRight {
+    margin-top: 280px;
+  }
+
+  .wrapper-2 .about-us .card {
+    border: solid 0px black;
+    width: 300px;
+  }
+
+  .wrapper-3 .form--and--info>form {
+    width: 500px;
+  }
+
+  .wrapper-3 .form--and--info .name {
+    width: 500px;
+  }
+
+  .wrapper-3 .form--and--info .email {
+    width: 500px;
+  }
+
+  .wrapper-3 .form--and--info .subject {
+    width: 500px;
+  }
+
+  .wrapper-3 .form--and--info .comment {
+    width: 500px;
+  }
+  .wrapper-3 .form--and--info .submit {
+    width: 515px;
+}
+
 @media (max-width:768px) {
   .wrapper-3 .info {
     margin-left: 0;
@@ -920,9 +971,8 @@ nav ul {
     top: 0;
   }
 
-
   .navigation--mini ul li a {
-    padding-left:20px;
+    padding-left: 20px;
     text-decoration: none;
     font-size: 20px;
     line-height: 40px;
