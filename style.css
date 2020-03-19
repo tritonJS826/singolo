@@ -1016,11 +1016,13 @@ nav ul {
     from {
       margin-left: 1000px;
       margin-right: -1000px;
+      opacity:0;
     }
 
     to {
       margin-left: 0;
       margin-right: 0;
+      opacity:1;
     }
   }
 
@@ -1028,11 +1030,13 @@ nav ul {
     from {
       margin-left: 0;
       margin-right: 0;
+      opacity:1;
     }
 
     to {
       margin-left: -1000px;
       margin-right: 1000px;
+      opacity:0;
     }
   }
 
@@ -1040,11 +1044,13 @@ nav ul {
     from {
       margin-right: 1000px;
       margin-left:-1000px;
+      opacity:0;
     }
 
     to {
       margin-right: 0;
       margin-left:0;
+      opacity:1;
     }
   }
 
@@ -1059,6 +1065,5 @@ nav ul {
       margin-left: 1000px;
       margin-right: -1000px;
       opacity:0;
-      display:none;
     }
   }
