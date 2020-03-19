@@ -18,22 +18,52 @@ MENU.addEventListener('click', (event) => {
 });
 
 SLIDER_ARR_LEFT.addEventListener('click', () => {
-  changeSlide();
+  changeSlideLeft();
+  // changeSlide();
+  //document.getElementById("slide1").animate("leaveLeft");
+  //document.getElementById("slide2").animate("comeLeft");
+
+
 });
 
 SLIDER_ARR_RIGHT.addEventListener('click', () => {
-  changeSlide();
+  changeSlideRight();
+  //document.getElementById("slide2").style.display = "block";
+  //document.getElementById("slide2").style.animation="comeRight 3s forwards";
 });
 
 
-function changeSlide() {
+function changeSlideRight() {
   const slide1style = document.getElementById("slide1").style.display;
   if (slide1style != 'none') {
-    document.getElementById("slide1").style.display = "none";
     document.getElementById("slide2").style.display = "block";
+    VERTICAL_PHONE.style.animation = "leaveRight 3s forwards";
+    HORIZONTAL_PHONE.style.animation = "leaveRight 3s forwards";
+    document.getElementById("slide2").style.animation = "comeRight 3s forwards";
+    setTimeout(() => {document.getElementById("slide1").style.display = "none"},3000);
   } else {
     document.getElementById("slide1").style.display = "block";
-    document.getElementById("slide2").style.display = "none";
+    VERTICAL_PHONE.style.animation = "comeRight 3s forwards";
+    HORIZONTAL_PHONE.style.animation = "comeRight 3s forwards";
+    document.getElementById("slide2").style.animation = "leaveRight 3s forwards";
+    setTimeout(() => {document.getElementById("slide2").style.display = "none"},3000);
+  }
+}
+
+function changeSlideLeft() {
+  const slide1style = document.getElementById("slide1").style.display;
+  if (slide1style != 'none') {
+    document.getElementById("slide2").style.display = "block";
+    VERTICAL_PHONE.style.animation = "leaveLeft 3s forwards";
+    HORIZONTAL_PHONE.style.animation = "leaveLeft 3s forwards";
+    document.getElementById("slide2").style.animation = "comeLeft 3s forwards";
+    setTimeout(() => {document.getElementById("slide1").style.display = "none"},3000);
+  } else {
+    document.getElementById("slide1").style.display = "block";
+    VERTICAL_PHONE.style.animation = "comeLeft 3s forwards";
+    HORIZONTAL_PHONE.style.animation = "comeLeft 3s forwards";
+    document.getElementById("slide2").style.animation = "leaveLeft 3s forwards";
+    setTimeout(() => {document.getElementById("slide2").style.display = "none"},3000);
   }
 }
 
