@@ -82,7 +82,7 @@ h1 {
   box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
   left: -102%;
   /* for sidebar to stay on top */
-  z-index: 1;
+  z-index: 99;
   transition: left 0.5s ease-in-out;
 }
 
@@ -223,6 +223,7 @@ nav ul {
   left: 4%;
   width: 1.6vw;
   height: 2.7vw;
+  z-index: 5;
 }
 
 .iPhoneVertical {
@@ -247,6 +248,7 @@ nav ul {
   right: 4%;
   width: 1.6vw;
   height: 2.7vw;
+  z-index: 5;
 }
 
 .arrowLeft:hover {
@@ -993,6 +995,8 @@ nav ul {
       -moz-box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
       box-shadow: 0px 0px 30px 10px rgba(107, 91, 94, 1);
     }
+
+  
   }
 
   @media (max-width: 527px) {
@@ -1010,19 +1014,36 @@ nav ul {
       width: 100%;
       height: 100%;
     }
+
+    /* .wrapper-3 .form--and--info .name {
+      width: 80vw;
+      margin: auto;
+    }
+
+    .wrapper-3 .form--and--info .email {
+      width: 80vw;
+    }
+
+    .wrapper-3 .form--and--info .subject {
+      width: 80vw;
+    }
+
+    .wrapper-3 .form--and--info .comment {
+      width: 80vw;
+    } */
   }
 
   @keyframes comeLeft {
     from {
-      margin-left: 1000px;
-      margin-right: -1000px;
-      opacity:0;
+      margin-left: 100%;
+      margin-right: -100%;
+      opacity: 0;
     }
 
     to {
       margin-left: 0;
       margin-right: 0;
-      opacity:1;
+      opacity: 1;
     }
   }
 
@@ -1030,27 +1051,27 @@ nav ul {
     from {
       margin-left: 0;
       margin-right: 0;
-      opacity:1;
+      opacity: 1;
     }
 
     to {
-      margin-left: -1000px;
-      margin-right: 1000px;
-      opacity:0;
+      margin-left: -100%;
+      margin-right: 100%;
+      opacity: 0;
     }
   }
 
   @keyframes comeRight {
     from {
-      margin-right: 1000px;
-      margin-left:-1000px;
-      opacity:0;
+      margin-right: 100%;
+      margin-left: -100%;
+      opacity: 0;
     }
 
     to {
       margin-right: 0;
-      margin-left:0;
-      opacity:1;
+      margin-left: 0;
+      opacity: 1;
     }
   }
 
@@ -1058,12 +1079,12 @@ nav ul {
     from {
       margin-left: 0;
       margin-right: 0;
-      opacity:1;
+      opacity: 1;
     }
 
     to {
-      margin-left: 1000px;
-      margin-right: -1000px;
-      opacity:0;
+      margin-left: 100%;
+      margin-right: -100%;
+      opacity: 0;
     }
   }

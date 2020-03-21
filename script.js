@@ -37,16 +37,16 @@ function changeSlideRight() {
   const slide1style = document.getElementById("slide1").style.display;
   if (slide1style != 'none') {
     document.getElementById("slide2").style.display = "block";
-    VERTICAL_PHONE.style.animation = "leaveRight 3s forwards";
-    HORIZONTAL_PHONE.style.animation = "leaveRight 3s forwards";
-    document.getElementById("slide2").style.animation = "comeRight 3s forwards";
-    setTimeout(() => {document.getElementById("slide1").style.display = "none"},3000);
+    VERTICAL_PHONE.style.animation = "leaveRight 1s forwards";
+    HORIZONTAL_PHONE.style.animation = "leaveRight 1s forwards";
+    document.getElementById("slide2").style.animation = "comeRight 1s forwards";
+    setTimeout(() => {document.getElementById("slide1").style.display = "none"},1000);
   } else {
     document.getElementById("slide1").style.display = "block";
-    VERTICAL_PHONE.style.animation = "comeRight 3s forwards";
-    HORIZONTAL_PHONE.style.animation = "comeRight 3s forwards";
-    document.getElementById("slide2").style.animation = "leaveRight 3s forwards";
-    setTimeout(() => {document.getElementById("slide2").style.display = "none"},3000);
+    VERTICAL_PHONE.style.animation = "comeRight 1s forwards";
+    HORIZONTAL_PHONE.style.animation = "comeRight 1s forwards";
+    document.getElementById("slide2").style.animation = "leaveRight 1s forwards";
+    setTimeout(() => {document.getElementById("slide2").style.display = "none"},1000);
   }
 }
 
@@ -54,16 +54,16 @@ function changeSlideLeft() {
   const slide1style = document.getElementById("slide1").style.display;
   if (slide1style != 'none') {
     document.getElementById("slide2").style.display = "block";
-    VERTICAL_PHONE.style.animation = "leaveLeft 3s forwards";
-    HORIZONTAL_PHONE.style.animation = "leaveLeft 3s forwards";
-    document.getElementById("slide2").style.animation = "comeLeft 3s forwards";
-    setTimeout(() => {document.getElementById("slide1").style.display = "none"},3000);
+    VERTICAL_PHONE.style.animation = "leaveLeft 1s forwards";
+    HORIZONTAL_PHONE.style.animation = "leaveLeft 1s forwards";
+    document.getElementById("slide2").style.animation = "comeLeft 1s forwards";
+    setTimeout(() => {document.getElementById("slide1").style.display = "none"},1000);
   } else {
     document.getElementById("slide1").style.display = "block";
-    VERTICAL_PHONE.style.animation = "comeLeft 3s forwards";
-    HORIZONTAL_PHONE.style.animation = "comeLeft 3s forwards";
-    document.getElementById("slide2").style.animation = "leaveLeft 3s forwards";
-    setTimeout(() => {document.getElementById("slide2").style.display = "none"},3000);
+    VERTICAL_PHONE.style.animation = "comeLeft 1s forwards";
+    HORIZONTAL_PHONE.style.animation = "comeLeft 1s forwards";
+    document.getElementById("slide2").style.animation = "leaveLeft 1s forwards";
+    setTimeout(() => {document.getElementById("slide2").style.display = "none"},1000);
   }
 }
 
@@ -125,7 +125,7 @@ function randomImg() {
 
 PORTFOLIO_IMG.addEventListener('click', (event) => {
   PORTFOLIO_IMG.querySelectorAll('div').forEach((element) => {
-    element.classList.remove('active')
+    element.classList.remove('active');
   });
   event.target.parentElement.classList.add('active');
 });
