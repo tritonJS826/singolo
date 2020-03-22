@@ -1005,8 +1005,9 @@ nav ul {
   }
 
   .wrapper-2 .portfolio-img>div {
-    width: 80vw;
-    height: 80vw;
+    width: 40vw;
+    height: 40vw;
+    margin: 5px;
   }
 
   .wrapper-2 .portfolio-img>div>img {
@@ -1014,22 +1015,17 @@ nav ul {
     height: 100%;
   }
 
-  /* .wrapper-3 .form--and--info .name {
-      width: 80vw;
-      margin: auto;
-    }
+  .wrapper-3 .form--and--info {
+    /* width: 94vw; */
+    margin: 2vw 2vw 2vw 2vw;
+    justify-content: center;
+    align-self: center;
+}
 
-    .wrapper-3 .form--and--info .email {
-      width: 80vw;
-    }
+.wrapper-3 .info {
+  margin: 2vw 2vw 2vw 2vw;
+}
 
-    .wrapper-3 .form--and--info .subject {
-      width: 80vw;
-    }
-
-    .wrapper-3 .form--and--info .comment {
-      width: 80vw;
-    } */
 }
 
 @keyframes comeLeft {
