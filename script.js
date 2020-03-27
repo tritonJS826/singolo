@@ -1,4 +1,5 @@
 const MENU = document.getElementById('menu');
+const MENUMAIN = document.getElementById('menu--main');
 const MESSAGE_BLOCK = document.getElementById('message-block');
 const BUTTON = document.getElementById('contactSubmit');
 const CLOSE_BUTTON = document.getElementById('closeMessageBlock');
@@ -12,6 +13,13 @@ const HORIZONTAL_PHONE = document.getElementById('horizontal-phone');
 
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('span').forEach((element) => {
+    element.classList.remove('active');
+  });
+  event.target.classList.add('active');
+});
+
+MENUMAIN.addEventListener('click', (event) => {
+  MENUMAIN.querySelectorAll('span').forEach((element) => {
     element.classList.remove('active');
   });
   event.target.classList.add('active');
